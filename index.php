@@ -27,7 +27,7 @@
             <label for="email">Email Address</label>
             <input
                 class="border border-gray-400 px-4 py-2 rounded w-full focus:outline-none focus:border-teal-400"
-                type="text"
+                type="email"
                 name="email"
                 id="email"
                 autofocus
@@ -65,6 +65,7 @@
                 data: $('#form').serialize(),
                 success: function(data) {
                     alert(data);
+                    location.reload();
                 },
                 error: function() {
                     alert('Error creating account');
